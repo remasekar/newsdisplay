@@ -10,7 +10,7 @@ export const loadNews = (values) => {
 export const call_news_api = () =>
 {
     return(dispatch) => {
-        axios.get(`http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=1c7fce68ee7a4cdcb395a5e02cca3aa1`)
+        axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=1c7fce68ee7a4cdcb395a5e02cca3aa1`)
         .then(response =>{
             const loadResults = response.data;
             dispatch(loadNews(loadResults))
