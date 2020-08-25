@@ -5,8 +5,6 @@ const newsReducer = ( state = valuesinitial, action ) => {
     {   
         case 'LOAD_NEWS' :
         return { ...valuesinitial,...action.payload}
-        case 'FILTER_NEWS' :
-        return { ...valuesinitial,...action.payload}
         default:
         return { ...state}
     }

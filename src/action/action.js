@@ -19,12 +19,6 @@ export const call_news_api = () =>
     }
 }
 
-export const filterwithkey = (values) => {
-    return {
-        type: 'FILTER_MOVIES',
-        payload: values
-    }
-}
 
 export const call_filter_news_api = (param) =>
 {
